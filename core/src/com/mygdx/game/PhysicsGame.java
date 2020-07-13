@@ -6,6 +6,8 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import java.util.Arrays;
+
 public class PhysicsGame extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
@@ -14,6 +16,7 @@ public class PhysicsGame extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
+		Arrays.stream(new int[0]).forEach(System.out::println);
 	}
 
 	@Override
